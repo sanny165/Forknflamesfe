@@ -3,7 +3,7 @@ import {Routes,Route} from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
 import Home from './screens/Home/Home';
 import BookTable from './screens/Bookatable/Bookatable';
-import Specialevents from './screens/specialevents/Specialevents';
+import Specialevents from './screens/Specialevents/Specialevents';
 import ContactUs from './screens/contactus/contactus';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
