@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./bookatable.css";
+import "./Bookatable.css";
 
 const branches = [
   { id: 1, name: "Downtown Branch", location: "MG Road, Bangalore" },

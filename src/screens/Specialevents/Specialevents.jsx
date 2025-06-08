@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './specialevents.css';
+import './Specialevents.css';
 
 const Specialevents = () => {
   const [formData, setFormData] = useState({
