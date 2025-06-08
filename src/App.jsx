@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Home from './screens/Home/Home';
 import BookTable from './screens/Bookatable/Bookatable';
 import Specialevents from './screens/Specialevents/Specialevents';
-import ContactUs from './screens/contactus/contactus';
+import ContactUs from './screens/Contactus/Contactus';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import './App.css';
