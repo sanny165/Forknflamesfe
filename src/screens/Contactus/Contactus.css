@@ -1,0 +1,10 @@
+.contactus-container {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.contactus-container iframe {
+  margin-top: 1.5rem;
+  border: 0;
+  border-radius: 8px;
+}

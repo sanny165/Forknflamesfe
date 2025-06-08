@@ -1,0 +1,73 @@
+.home {
+  height: 34vw;
+  margin: 30px auto;
+  background: url('../../assets/banner.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: whitesmoke;
+  border-radius: 12px;
+}
+
+.home-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 50%;
+  left: 5vw;
+  top: 2vw;
+  bottom: 2vw;
+  animation: fadein 3s;
+}
+
+.home-content h2 {
+  font-weight: 500;
+  font-size: max(4.5vw, 2.2rem);
+  text-shadow: 2px 2px 2px rgb(113, 8, 8),
+               -0.7px 0.7px 0 grey,
+               0.7px -0.7px 0 grey,
+               -0.7px -0.7px 0 grey;
+}
+
+.home-content p {
+  font-size: 1.6vw;
+  font-weight: 500;
+  margin: 1vw 0vw;
+  color: #eee;
+  line-height: 1.5;
+  text-shadow: 2px 2px 2px rgb(52, 48, 48),
+               -0.7px 0.7px 0 grey,
+               0.7px -0.7px 0 rgb(158, 154, 154),
+               -0.7px -0.7px 0 grey;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 2vw;
+  margin-top: 2.5vw;
+}
+
+.home-buttons button {
+  border: none;
+  padding: 1vw 2.3vw;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1vw;
+  background-color: #ff6b35;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.home-buttons button:hover {
+  background-color: #e35a20;
+}
+
+
+
+/* Optional fade-in animation */
+@keyframes fadein {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

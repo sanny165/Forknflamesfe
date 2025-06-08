@@ -1,0 +1,25 @@
+.specialevents-container {
+  padding: 2rem;
+  text-align: center;
+}
+.specialevents-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.specialevents-form input,
+.specialevents-form textarea {
+  padding: 0.8rem;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.confirmation {
+  background-color: #e0f7fa;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
