@@ -2,6 +2,7 @@
   padding: 2rem;
   text-align: center;
 }
+
 .specialevents-form {
   max-width: 500px;
   margin: 0 auto;
@@ -9,6 +10,7 @@
   flex-direction: column;
   gap: 1rem;
 }
+
 .specialevents-form input,
 .specialevents-form textarea {
   padding: 0.8rem;
@@ -16,10 +18,46 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 .confirmation {
   background-color: #e0f7fa;
   padding: 2rem;
   border-radius: 8px;
   margin: 2rem auto;
   max-width: 600px;
+}
+
+
+@media (max-width: 768px) {
+  .specialevents-container {
+    padding: 1rem;
+  }
+
+  .specialevents-form {
+    padding: 0 1rem;
+  }
+
+  .specialevents-form input,
+  .specialevents-form textarea {
+    font-size: 1.1rem;
+    padding: 0.6rem;
+  }
+
+  .confirmation {
+    padding: 1.5rem;
+    margin: 1.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .specialevents-form input,
+  .specialevents-form textarea {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .confirmation {
+    font-size: 0.95rem;
+  }
 }

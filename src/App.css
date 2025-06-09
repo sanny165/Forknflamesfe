@@ -2,8 +2,22 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 0 1rem; 
+  box-sizing: border-box;
 }
 
 .main-content {
   flex: 1;
+  padding-bottom: 2rem; 
+}
+
+
+@media (max-width: 600px) {
+  .layout {
+    padding: 0 0.5rem;
+  }
+
+  .main-content {
+    padding-bottom: 1.5rem;
+  }
 }

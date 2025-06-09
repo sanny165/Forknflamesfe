@@ -4,6 +4,7 @@
   align-items: center;
   background-color: #fefefe;
   padding: 20px 32px;
+  flex-wrap: wrap;
 }
 
 /* Left Logo Section */
@@ -12,7 +13,6 @@
   align-items: center;
   gap: 10px;
 }
-
 
 #logo {
   height: 130px;
@@ -23,6 +23,7 @@
   font-size: 3rem;
   font-weight: bold;
   color: #333;
+  margin: 0;
 }
 
 /* Navigation Menu */
@@ -31,6 +32,8 @@
   list-style: none;
   gap: 25px;
   font-size: 1.8rem;
+  padding-left: 0;
+  margin: 0;
 }
 
 .navbar-bw li {
@@ -40,7 +43,6 @@
 .navbar-bw li a {
   text-decoration: none;
   color: #333;
-  
 }
 
 .navbar-bw li a:hover {
@@ -48,29 +50,45 @@
   transition: 0.2s;
 }
 
-.navbar-bw .active{
-    border-bottom: 2px solid #49557e;
-    color: #ff6b35;
+.navbar-bw .active {
+  border-bottom: 2px solid #49557e;
+  color: #ff6b35;
 }
 
-/* Responsive Layout */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbar-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+  }
+
+  #logo {
+    height: 90px;
+    width: 90px;
+  }
+
+  .navbar-left h1 {
+    font-size: 2rem;
+    text-align: center;
   }
 
   .navbar-bw {
     flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .navbar-left{
+    gap: 15px;
+    align-items: center;
     width: 100%;
+    margin-top: 15px;
   }
 
-  .navbar-left h1 {
+  .navbar-bw li {
     font-size: 1.6rem;
   }
 }

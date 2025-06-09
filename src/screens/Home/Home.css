@@ -13,7 +13,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   max-width: 50%;
   left: 5vw;
   top: 2vw;
@@ -33,7 +33,7 @@
 .home-content p {
   font-size: 1.6vw;
   font-weight: 500;
-  margin: 1vw 0vw;
+  margin: 1vw 0;
   color: #eee;
   line-height: 1.5;
   text-shadow: 2px 2px 2px rgb(52, 48, 48),
@@ -46,6 +46,7 @@
   display: flex;
   gap: 2vw;
   margin-top: 2.5vw;
+  flex-wrap: wrap;
 }
 
 .home-buttons button {
@@ -65,8 +66,59 @@
 }
 
 
+@media (max-width: 768px) {
+  .home {
+    height: auto;
+    padding: 2rem 1rem;
+  }
 
-/* Optional fade-in animation */
+  .home-content {
+    position: static;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .home-content h2 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .home-buttons {
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+  }
+
+  .home-buttons button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .home-content p {
+    font-size: 0.9rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .home-buttons button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 @keyframes fadein {
   0% { opacity: 0; transform: translateY(-10px); }
   100% { opacity: 1; transform: translateY(0); }

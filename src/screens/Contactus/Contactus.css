@@ -3,8 +3,35 @@
   text-align: center;
   font-size: 1.6rem;
 }
+
 .contactus-container iframe {
   margin-top: 1.5rem;
   border: 0;
   border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  height: 300px;
+}
+
+
+@media (max-width: 768px) {
+  .contactus-container {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .contactus-container iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactus-container {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .contactus-container iframe {
+    height: 200px;
+  }
 }
